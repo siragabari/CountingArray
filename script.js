@@ -5,11 +5,11 @@ let array = [];
 let iterator = 0;
 
 function count() {
-    array.push(iterator);
+    array.unshift(iterator);
     console.log(array);
     iterator++;
-    if(iterator >= 9) {
-        array.shift();
+    if(iterator > 9) {
+        array.pop(array);
     }
 }
 
